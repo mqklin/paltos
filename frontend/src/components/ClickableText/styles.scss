@@ -1,0 +1,50 @@
+.root {
+}
+
+.blank{
+  a {
+    color: rgba(0, 0, 255, 1);
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.linkButton {
+  cursor: pointer;
+  opacity: 0.7;
+  color: blue;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+
+.button {
+  padding: 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+
+  color: rgba(0, 0, 0, 0.5);
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &.isActive {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+

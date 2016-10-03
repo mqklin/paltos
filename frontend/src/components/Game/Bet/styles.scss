@@ -1,0 +1,10 @@
+.bet {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  .input {
+    width: 50px;
+    margin: 0 5px;
+  }
+}

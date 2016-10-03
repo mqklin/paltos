@@ -1,0 +1,28 @@
+.wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  background: white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px;
+  padding: 15px;
+
+  .block {
+    &:not(:first-of-type) {
+      margin-top: 10px;
+    }
+    .el {
+      &:not(:first-of-type) {
+      }
+    }
+  }
+}

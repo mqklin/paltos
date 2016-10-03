@@ -1,0 +1,52 @@
+.root {
+
+}
+
+.tableHeader {
+  margin-bottom: 10px;
+}
+
+.tableList {
+  .row {
+    padding: 10px 0;
+  }
+}
+
+.tableHeader, .tableList {
+  .row {
+    display: flex;
+    align-items: center;
+
+    &.isWinner {
+      background: gold;
+    }
+
+    &:not(:first-of-type) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    .points {
+      display: inline-block;
+      text-align: center;
+      width: 100px;
+    }
+
+    .name {
+      display: inline-block;
+      text-align: center;
+      width: 300px;
+      overflow: hidden;
+      margin: auto;
+    }
+
+    .chance {
+      display: inline-block;
+      text-align: center;
+      width: 100px;
+    }
+  }
+}
+
+
+

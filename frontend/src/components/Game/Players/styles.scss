@@ -1,0 +1,48 @@
+.root {
+  width: 100%;
+}
+
+
+.el {
+  &:not(:first-of-type) {
+    margin-top: 10px;
+  }
+  display: flex;
+  white-space: nowrap;
+}
+
+.list {
+  margin-top: 10px;
+  .player {
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    overflow: hidden;
+    .name {
+      display: flex;
+      background: #dbdbdb;
+      position: relative;
+      &.draw span a {
+        color: #ff9800;
+      }
+      .gain {
+        visibility: hidden;
+        position: absolute;
+        font-size: 15px;
+        line-height: 15px;
+        left: 100%;
+        margin-left: 5px;
+        margin-top: 2px;
+        &.win, &.lose {
+          visibility: visible;
+        }
+        &.win {
+          color: rgba(0, 150, 0, 1);
+        }
+        &.lose {
+          color: rgba(255, 0, 0, 1);
+        }
+      }
+    }
+  }
+}

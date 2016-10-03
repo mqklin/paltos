@@ -1,0 +1,99 @@
+.root {
+  width: 500px;
+  min-height: 100px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.block {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  &:not(:first-of-type) {
+    margin-top: 20px;
+  }
+  .el {
+    width: 100%;
+    &:not(:first-of-type) {
+      margin-top: 5px;
+    }
+  }
+
+  &.turns {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    .gain {
+      position: absolute;
+      margin-top: 7px;
+      font-size: 15px;
+      line-height: 15px;
+      &.draw {
+        color: #ff9800;
+      }
+      &.win {
+        color: rgba(0, 150, 0, 1);
+      }
+      &.lose {
+        color: rgba(255, 0, 0, 1);
+      }
+    }
+  }
+}
+
+
+
+.option {
+  &:not(:first-of-type) {
+    margin-left: 20px;
+  }
+  display: inline-block;
+  width: 30px;
+  &.isActive {
+    svg {
+      fill: rgba(0, 0, 0, 1);
+    }
+  }
+  &.selectable {
+    cursor: pointer;
+  }
+  svg {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
+
+
+.hint {
+  font-size: 13px;
+  line-height: 13px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+// .playButton {
+  // display: inline-block;
+  // background-color: rgba(255, 42, 91, 0.8);
+  // cursor: pointer;
+  // color: rgba(255, 255, 255, 1);
+  // padding: 10px 20px;
+  // position: relative;
+  // user-select: none;
+  // &:hover {
+    // background-color: rgba(255, 42, 91, 0.9);
+  // }
+  // &.disabled {
+    // pointer-events: none;
+    // opacity: 0.5;
+  // }
+  // &:active {
+    // padding-top: 11px;
+    // padding-bottom: 9px;
+    // background-color: rgba(255, 42, 91, 1);
+  // }
+// }
+

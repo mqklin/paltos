@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: #5e81a8;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 18px;
+
+  &:hover {
+    background-color: #6888ad;
+    text-decoration: none;
+  }
+  .icon {
+    display: inline-block;
+    height: 12px;
+    width: 20px;
+    background: url('//vk.com/images/icons/comments_widget.png');
+    background-position: 0 0;
+  }
+}

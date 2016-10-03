@@ -1,0 +1,28 @@
+.root {
+}
+
+.block {
+  margin-bottom: 70px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  .el {
+    &:not(:first-of-type) {
+      margin-top: 10px;
+    }
+    display: flex;
+    white-space: nowrap;
+  }
+}
+
+.membersList {
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 500px;
+}
+
+.shareButtonContent {
+  .text, .counter {
+    margin-left: 15px;
+  }
+}

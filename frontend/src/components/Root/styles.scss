@@ -1,0 +1,59 @@
+.root {
+  position: fixed;
+  left: 50px;
+  right: 50px;
+  padding: 20px 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background: rgba(255, 0, 0, 0.1);
+  .block {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .header {
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    .el {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      padding: 5px 0;
+      margin: auto 0;
+    }
+  }
+}
+
+
+.input {
+  width: 100px;
+  margin-left: 5px;
+}
+
+
+.waiters {
+  width: 100%;
+  .waiter {
+    padding: 20px 5px;
+    &:not(:last-of-type) {
+      margin-bottom: -20px;
+    }
+    &:not(:first-of-type) {
+      margin-top: 20px;
+      border-top: 1px solid gray;
+    }
+    .row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &:not(:first-of-type) {
+        margin-top: 20px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html style="text-align: center; background: rgba(0, 0, 0, 0.1); height: 100vh;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="build/app.css" />
+  <title>Палтос</title>
+
+  <link rel="icon" href="build/favicon.png" />
+
+  <meta property="og:title" content="Камень, ножницы, бумага" />
+  <meta property="og:description" content="Играй и выигрывай!" />
+</head>
+<body style="display: inline-block;">
+  <!-- VK auth -->
+  <script src="//vk.com/js/api/openapi.js?127"></script>
+  <script>VK.init({ apiId: 5637950 })</script>
+  <!-- End VK auth -->
+
+  <!-- VK share -->
+  <script src="//vk.com/js/api/share.js?94" charset="windows-1251"></script>
+  <!-- End VK share -->
+
+  <div id="root"></div>
+  <script src="build/bundle.js"></script>
+</body>
+</html>
+

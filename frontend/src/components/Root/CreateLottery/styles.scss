@@ -1,0 +1,39 @@
+.add {
+
+}
+
+.block {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 0 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  .header {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .el {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 5px 0;
+    margin: auto 0;
+    &:last-of-type {
+      margin-top: 100px;
+    }
+  }
+}
+
+.prize {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+
+  .count {
+    width: 50px;
+  }
+  .value {
+    width: 50px;
+  }
+}

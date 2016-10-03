@@ -1,0 +1,67 @@
+.root {
+  width: 500px;
+  .histories {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.05);
+    .historiesHeader, .historiesList {
+      .row {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        &:hover {
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.1);
+        }
+        &.selected {
+          background: rgba(0, 0, 0, 0.1);
+        }
+        .num {
+          display: inline-block;
+          text-align: center;
+          width: 100px;
+        }
+        .members {
+          display: inline-block;
+          text-align: center;
+          width: 300px;
+          margin: auto;
+        }
+        .sum {
+          display: inline-block;
+          text-align: center;
+          width: 100px;
+        }
+      }
+    }
+
+    .historiesHeader {
+      .row:hover {
+        cursor: default;
+        background: none;
+      }
+    }
+
+    .historiesList {
+      margin-bottom: 20px;
+    }
+  }
+
+  .history {
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 25px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    .lotteryNumber {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 10px 0 5px;
+    }
+    .membersList {
+      padding: 20px 20px 0;
+      box-sizing: border-box;
+      width: 500px;
+    }
+  }
+}

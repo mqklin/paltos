@@ -1,0 +1,49 @@
+.root {
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  background: white;
+  padding: 5px 0;
+  border: 1px solid #ccc;
+  $r: 2px;
+  @keyframes blink-border {
+    0% {
+      text-shadow: $r 0 black;
+    }
+    25% {
+      text-shadow: 0 $r black;
+    }
+    50% {
+      text-shadow: -$r 0 black;
+    }
+    100% {
+      text-shadow: 0 -$r black;
+    }
+  }
+  &.error {
+    color: transparent;
+    text-shadow: 0 0 black;
+    outline: rgba(255, 0, 0, 0.8) auto 5px;
+    border-color: rgba(255, 0, 0, 0.8);
+    animation: blink-border 0.000001s linear infinite;
+  }
+  &.success {
+    outline: rgba(0, 255, 0, 0.8) auto 5px;
+    border-color: rgba(0, 255, 0, 0.8);
+  }
+  &.textAlignCenter {
+    text-align: center;
+  }
+}
+.errorText {
+  color: red;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+

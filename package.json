@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "dev": "node scripts/dev",
+    "prod": "node scripts/prod",
+    "deploy": "DEPLOY=true node scripts/prod && node scripts/deploy"
+  }
+}
